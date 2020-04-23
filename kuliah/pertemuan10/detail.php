@@ -14,19 +14,31 @@ $mhs = query("SELECT * FROM mahasiswa WHERE id = $id");
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Detail Mahasiswa</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
-  <h3>Detail Mahasiswa</h3>
-  <ul>
-    <li><img src="img/<?= $mhs['gambar']; ?>" alt=""></li>
-    <li>NRP : <?= $mhs['nrp']; ?></li>
-    <li>Nama : <?= $mhs['nama']; ?></li>
-    <li>Email : <?= $mhs['email']; ?></li>
-    <li>Jurusan : <?= $mhs['jurusan']; ?></li>
-    <li><a href="">Ubah</a> | <a href="">Hapus</a></li>
-    <li><a href="">Kembali ke daftar mahasiswa</a></li>
-  </ul>
+  <h3 style="text-align: center">Detail Mahasiswa</h3>
+  <div class="cardcontainer">
+    <div class="card text-center mx-auto mb-4" style="width: 18rem;">
+      <img src="img/<?= $mhs['gambar']; ?>" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><?= $mhs['nama']; ?></h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><?= $mhs['nrp']; ?></li>
+        <li class="list-group-item"><?= $mhs['email']; ?></li>
+        <li class="list-group-item"><?= $mhs['jurusan']; ?></li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Ubah</a>
+        <a href="#" class="card-link">Hapus</a>
+        <br>
+        <br>
+        <a href="latihan3.php" class="card-link">Kembali ke daftar mahasiswa</a>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

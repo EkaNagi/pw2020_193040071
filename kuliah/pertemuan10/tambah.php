@@ -21,47 +21,41 @@ if (isset($_POST['tambah'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tambah Data Mahasiswa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
-  <h3>Form Tambah Data Mahasiswa</h3>
-  <form action="" method="POST">
-    <ul>
-      <li>
-        <label>
-          Nama :
-          <input type="text" name="nama" autofocus required>
-        </label>
-      </li>
-      <li>
-        <label>
-          NRP :
-          <input type="text" name="nrp" required>
-        </label>
-      </li>
-      <li>
-        <label>
-          Email :
-          <input type="text" name="email" required>
-        </label>
-      </li>
-      <li>
-        <label>
-          Jurusan :
-          <input type="text" name="jurusan" required>
-        </label>
-      </li>
-      <li>
-        <label>
-          Gambar :
-          <input type="text" name="gambar" required>
-        </label>
-      </li>
-      <li>
-        <button type="submit" name="tambah">Tambah Data</button>
-      </li>
-    </ul>
-  </form>
+  <div class="container">
+    <div class="card mx-auto mt-5">
+      <h5 class="card-header">Form Tambah Data Mahasiswa</h5>
+      <div class="card-body">
+        <form action="" method="POST">
+          <div class="form-group">
+            <label for="">Nama</label>
+            <input type="text" name="nama" class="form-control" id="" aria-describedby="" placeholder="Enter name" autofocus required>
+          </div>
+          <div class="form-group">
+            <label for="">NRP</label>
+            <input type="text" name="nrp" class="form-control" id="" placeholder="NRP" required>
+          </div>
+          <div class="form-group">
+            <label for="">E-mail</label>
+            <input type="text" name="email" class="form-control" id="" placeholder="E-mail" required>
+          </div>
+          <div class="form-group">
+            <label for="">Jurusan</label>
+            <input type="text" name="jurusan" class="form-control" id="" placeholder="Jurusan" required>
+          </div>
+          <div class="form-group">
+            <label for="">Gambar</label>
+            <input type="text" name="gambar" class="form-control" id="" placeholder="Gambar" required>
+          </div>
+          <button type="submit" name="tambah" class="btn btn-dark">Tambah Data</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
