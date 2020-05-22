@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- CSS Sendiri -->
+  <style>
+    .navbar {
+      position: relative;
+      z-index: 1;
+    }
+
+    .navbar-brand {
+      font-family: Overpass;
+      font-size: 32px;
+    }
+
+    .jumbotron {
+      background-image: url(https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+      background-size: cover;
+      height: 750px;
+      position: relative;
+      margin-bottom: 0;
+    }
+
+    .jumbotron .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .jumbotron::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+      position: absolute;
+      bottom: 0;
+    }
+
+    .jumbotron .display-4 {
+      color: white;
+      text-align: center;
+      font-family: Yesefa One;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+      font-size: 75px;
+    }
+
+    .jumbotron .display-4 span {
+      font-weight: bold;
+    }
+
+    .jumbotron img {
+      width: 50px;
+      position: relative;
+      top: 10px;
+      left: 210px;
+    }
+
+    .rajdhani {
+      font-family: Rajdhani;
+    }
+
+    .prompt {
+      font-family: Prompt;
+    }
+
+    .overpass {
+      font-family: Overpass;
+    }
+
+    p {
+      font-size: 17px;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
+    }
+
+    @media (min-width: 992px) {
+
+      .navbar-brand,
+      .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      }
+
+      .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+      }
+
+      .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid white;
+        width: 100%;
+        margin: auto;
+        padding: -1px;
+        margin-bottom: -4px;
+      }
+
+      .jumbotron {
+        height: 626px;
+        margin-top: -75px;
+        background-position: 0 -120px;
+      }
+
+      .jumbotron .display-4 {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 120px;
+      }
+
+      .salam {
+        text-align: right;
+        margin-right: 210px;
+      }
+
+      .footer {
+        margin-top: 155px;
+        margin-left: -120px;
+      }
+    }
+  </style>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Overpass&family=Prompt:wght@100&family=Rajdhani:wght@700&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+  <title>Index PW 193040071</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">THE GATES</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tubes/">Tugas Besar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">INDEX</h1>
+      <p class="overpass">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Accusamus sed amet soluta
+        recusandae corrupti
+        molestias. Facere quos, iste consequuntur distinctio.
+        <br>
+        When your practice have different method from class for making this project, especially login and register
+        function.
+        <br> sed earum totam deleniti maiores suscipit ullam
+        quibusdam!
+        Laborum delectus officiis, reprehenderit eveniet quod, <br> numquam quaerat et tenetur est consequatur esse.
+        Sit,
+        omnis recusandae expedita voluptatem quis excepturi dolor sed?</p>
+      <p class="salam overpass">Regards, Tresna Eka Widiana - 193040071</p>
+
+      <div class="tombolan mt-5">
+        <table class="table text-center prompt">
+          <tr>
+            <th style="color: white;">Kuliah</th>
+            <td><a href="kuliah/pertemuan9/" class="btn btn-dark">09</a></td>
+            <td><a href="kuliah/pertemuan10/" class="btn btn-dark">10</a></td>
+            <td><a href="kuliah/pertemuan11/" class="btn btn-dark">11</a></td>
+            <td><a href="kuliah/pertemuan12/" class="btn btn-dark">12</a></td>
+            <td><a href="kuliah/pertemuan13/" class="btn btn-dark">13</a></td>
+          </tr>
+          <tr>
+            <th style="color: white;">Praktikum</th>
+            <td colspan="2"><a href="praktikum/P5_PW_193040071/" class="btn btn-dark">P5</a></td>
+            <td><a href="praktikum/P6_PW_193040071/" class="btn btn-dark">P6</a></td>
+            <td colspan="2"><a href="praktikum/P7_PW_193040071/" class="btn btn-dark">P7</a></td>
+          </tr>
+        </table>
+      </div>
+
+
+      <!-- <div class="footer">
+        <div class="col text-left">
+          <p class="prompt" style="font-size: 15px;">2020 All Rights Reserved by Tresna Eka Widiana.</p>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
